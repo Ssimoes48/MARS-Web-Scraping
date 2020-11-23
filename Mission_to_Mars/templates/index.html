@@ -7,7 +7,10 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Mission to Mars</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
     </head>
+
+    
 
     <body>
         <div class="container-fluid">
@@ -15,7 +18,78 @@
                 <h1>Misson to Mars</h1>
                 <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data!</a></p>
             </div>
-            <h2>Latest Mars News: {{ planet.news_title }}</h2>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="container-fluid">
+                        <section id="Mars_News">
+                            <section id="figure">
+                                <h2 id="table_name">Latest Mars News</h2>
+                                <h3>{{ planet.news_title }}</h3>
+                                <p>{{ planet.news_p }}</p>
+                            </section>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="container-fluid">
+                        <div class="container-fluid">
+                            <section id="Mars_Image">
+                                <section id="figure">
+                                    <h2 id="table_name">Featured Mars Image</h2>
+                                    <hr>
+                                    <img src="{{planet.mars_img}}" alt="ack" width="75%">
+                                </section>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="container-fluid">
+                        <section id="Mars_Facts">
+                            <section id="figure">
+                                <h2 id="table_name">Mars Facts</h2>
+                                <table class="table">
+                                    <thead>
+                                        <tr> {{ planet.facts_table }}</tr>
+                                    </thead>
+                                </table>
+                            </section>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="container-fluid">
+                        <section id="Mars_Hemispheres">
+                            <section id="figure">
+                                <h2 id="table_name">Mars Hemispheres</h2>
+
+                                {% for i in range(4) %}
+                                <div class="col-med-6">
+                                    <div class="card" style="width: 20rem;">
+                                        <div class="card-body">
+                                            <h4 class="card-title">{{ planet.hem_img_url }}</h4>
+                                            <img src="{{planet.hem_img_url}}" class="card-img-top" alt="ack">
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </section>
+                        </section>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 

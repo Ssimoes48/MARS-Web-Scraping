@@ -1,0 +1,48 @@
+body {
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    width: auto;
+    margin: auto;
+    padding: 20px;
+  }
+
+#Mars_News {
+    border: 2px solid black;
+    margin: 30px;
+    padding: 40px;
+    width: auto;
+    background-color: white;
+}
+
+#Mars_Image {
+    border: 2px solid black;
+    margin: 30px;
+    padding: 40px;
+    width: auto;
+    background-color: white;
+}
+
+#Mars_Facts {
+    border: 2px solid black;
+    margin: 30px;
+    padding: 40px;
+    width: auto;
+    background-color: white;
+}
+
+#Mars_Hemispheres {
+    border: 2px solid black;
+    margin: 30px;
+    padding: 40px;
+    width: auto;
+    background-color: white;
+}
+
+h2{
+    font-weight: bold;
+    font-size: inherit;
+    padding: 20px;
+}

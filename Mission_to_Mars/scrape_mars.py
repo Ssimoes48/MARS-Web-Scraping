@@ -55,7 +55,7 @@ def scrape():
         browser.back()
 
     #mars dictionary
-    mars_dict = {"news_title": news_title, "news_p": news_p, "mars_image": mars_img, "mars_facts": facts_table, "hem_images": hem_img_urls}
+    mars_dict = {"news_title": news_title, "news_p": news_p, "mars_img": mars_img, "facts_table": facts_table, "hem_img_urls": hem_img_urls}
 
     #quit browser
     browser.quit()
