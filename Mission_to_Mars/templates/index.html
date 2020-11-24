@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Mission to Mars</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
     </head>
 
@@ -56,7 +56,7 @@
                         <section id="Mars_Facts">
                             <section id="figure">
                                 <h2 id="table_name">Mars Facts</h2>
-                               {{ planet.facts_table|safe }}
+                                {{ planet.facts_table|safe }}
                             </section>
                         </section>
                     </div>
@@ -67,12 +67,12 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="container-fluid">
-                        <section id="Mars_Hemispheres">
-                            <section id="figure">
-                                <h2 id="table_name">Mars Hemispheres</h2>
+                    <section id="Mars_Hemispheres">
+                        <section id="figure">
+                            <h2 id="table_name">Mars Hemispheres</h2>
+                            <div class="row row-cols-1 row-cols-md-4">
                                 {% for hem_dic in planet.hem_img_urls %}
-                                <div class="col-med-6">
+                                <div class="col mb-4">
                                     <div class="card" style="width: 20rem;">
                                         <div class="card-body">
                                             <h4 class="card-title">{{ hem_dic.title }}</h4>
@@ -81,11 +81,12 @@
                                     </div>
                                 </div>
                                 {% endfor %}
-                            </section>
+                            </div>
                         </section>
-                    </div>
+                    </section>
                 </div>
             </div>
+        </div>
         </div>
     </body>
 
