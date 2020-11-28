@@ -13,7 +13,6 @@ Ever wonder what the conditions on Mars are right now? Well, look no further! I 
 * [Scrape Summary](#scrape_summary)
 * [Flask](#flask)
 * [Index.html](#index.html)
-* [Web Site](#web-site)
 * [Formatting](#formatting)
 * [Resources](#resources)
 * [Contact](#contact)
@@ -127,21 +126,39 @@ I defined my scrape function as below and returned my called on my final mars di
 
 ## Index.html
 
+To create my website to display my Mars Scrape, I used the below standard code and linked to `bootstrap` and my formatting `style.css ` file. This is all included in the `<head>` . 
+
 ![HMTL head](Images/html_head.PNG)
 
-![News Container](Images/news_contain.PNG)
-
-![Image Container](Images/image_contain.PNG)
-
-![Facts Container](Images/facts_contain.PNG)
-
-![Hem Container](Images/hem_cards.PNG)
-
-## Web Site
+At the top of the website page, there is a large button that initiates my `scrape_mars.py` .
 
 ![Scrape Button](Images/scrape_button.PNG)
 
+To make the final scrape results return in an organized format, I created each scrape return in a container and aligned the containers using the `grid` method. To reference the Mars News, I note the variables `news_title` and `news_p` on the website. To reference them, they need to be inside double curly brackets `{{ }}` . 
+
+![News Container](Images/news_contain.PNG)
+
+To reference the mars image, I note the mars variable `mars_image` which is a url. To display an image from a url, you need to use the code 
+
+`<img src="{{planet.mars_img}}" alt="ack" width="75%">`
+
+I added further formatting by sizing the image at `width=75%` . When previewing the image, it displayed nicely at this size on a full size monitor. 
+
+![Image Container](Images/image_contain.PNG)
+
+The table is already formatted in `.hmtl` to view as a table so all I needed to do was reference the variable in `{{ }}` . The formatting was coming up with an error so I had to add ` |safe ` after the variable to display correctly. 
+
+![Facts Container](Images/facts_contain.PNG)
+
+The most complex display was the Mars Hemisphere images. I displayed them as `cards` which is a formatting from `bootstrap` . To do this, I had to call the images in my list/dictionary with a `for loop` in my `index.html` document in order to print each dictionary item inside a card. To do this, I referenced the dictionary and the part of the dictionary I needed. For example, for the title, I referenced `hem_dict.title` and for the url I referenced `hem_dict.url` - which also needed to be printed as an image. 
+
+I then referenced `bootstrap` documentation to display my 4 cards evenly in a grid but the code did not work on the final display. They are neatly in the container; but displayed in 1 row and not in a 4-grid. 
+
+![Hem Container](Images/hem_cards.PNG)
+
 ## Formatting
+
+I had trouble formatting my table, so I added a `style.css` to help. I was able to add a nice grid and hide the index on the left side. It is not as clean as I would have liked, but it still came out quite clear. 
 
 ![CSS](Images/css_table.PNG)
 
