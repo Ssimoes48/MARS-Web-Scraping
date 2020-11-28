@@ -55,17 +55,29 @@ When viewed on the website, the scrape search displays below :
 
 ## Mars Image
 
+In order to find the correct format of the main image on the Mars site, I had to add ` .click ` to my searches. I used `browser.find` to locate the part of the site I needed then add the `.click( ) ` to the end of the search. I needed to click two times to find the actual location of the correct size image. Then I returned the `url` of the image as a variable. 
+
 ![Mars Image JN](Images/jn_image_code.PNG)
 
+My final code in `Visual Studio` looked similar:
+
 ![Mars Image VS](Images/vs_image_code.PNG)
+
+When viewed on the website, the scrape search displays below:
 
 ![Mars Image Web](Images/mars_image.PNG)
 
 ## Mars Facts
 
+To find my Mars Facts table, I simply called the table from the site and converted it into an `hmtl` formate. To do that I used the `pandas` function `to.html( )` . I tried to remove the index from my chart by added `(index=False)` at the end of my formatting, but it did not return the results I was looking for. 
+
 ![Mars Facts JN](Images/jn_facts_code.PNG)
 
+For my final scrape code in `Visusal Studio` , I ended up removing the extra formatting of `index-False)` since it did not help my final table formatting. 
+
 ![Mars Facts VS](Images/vs_facts_code.PNG)
+
+When viewed on the website, the scrape search displays below:
 
 ![Mars Facts Web](Images/mars_facts.PNG)
 
