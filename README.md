@@ -41,7 +41,7 @@ For my final code for scraping in `Visual Studio` I used the same dependencies.
 
 ## Mars News
 
-To find my “Mars News”, I used `Beautiful Soup` function `soup.find` . I viewed the web sites code through the “inspect” tool. With this tool, I was able to see that I need to call the `class_=”list_text” ` . withing that class, I need to add an additional specification and search for the `class_=”content_title” ` . This returned the latest news article headline on the Mars site. I used a similar `soup.find` search to find the correspond text summary of the headline. 
+To find my “Mars News”, I used `Beautiful Soup` function `soup.find` . I viewed the web sites code through the “inspect” tool. With this tool, I was able to see that I need to call the `class_="list_text” ` . withing that class, I need to add an additional specification and search for the `class_="content_title” ` . This returned the latest news article headline on the Mars site. I used a similar `soup.find` search to find the correspond text summary of the headline. 
 
 ![Mars News JN](Images/jn_news_code.PNG)
 
