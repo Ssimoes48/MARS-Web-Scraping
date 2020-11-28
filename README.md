@@ -83,17 +83,29 @@ When viewed on the website, the scrape search displays below:
 
 ## Mars Hemispheres
 
+To find images of the hemispheres of Mars, I needed to add a lot of `.click ` to my code. Once I was able to scrape one Image name and image url, I then added the code to a `for loop` . This way I only needed to code the process one time, and then the `for loop` would run through it for each image. 
+
+I created a `list` which contains `dictionaries` of the image name and url to the image. 
+
 ![Mars Hems JN](Images/jn_hem_code.PNG)
 
+The final code in the `Visual Studio` scrape looked the same. 
+
 ![Mars Hems VS](Images/vs_hem_code.PNG)
+
+To view this nicely on the website, I created the images and titles as `cards` using `bootstrap` formatting. 
 
 ![Mars Hems Web](Images/mars_hem.PNG)
 
 ## Scrape Summary
 
+At the end of all of my scrape queries, I used `browser.quit` to stop running my Chrome browser I started in the initial set up. 
+
 ![Brower quit JN](Images/jn_quit_code.PNG)
 
 ![Brower quit VS](Images/vs_quit_code.PNG)
+
+To organize my data in a way to easily call to my `flask` , I added all of my results to a master dictionary. 
 
 ![Dictionary JN](Images/jn_dict_code.PNG)
 
@@ -101,9 +113,15 @@ When viewed on the website, the scrape search displays below:
 
 ## Flask
 
+To preform my data scaping in Flask I needed to use a `app.py` file and import the below dependencies. I also imported my `scrape_mars.py ` file.  
+
 ![App 1](Images/app_1.PNG)
 
+Then I created a home route that would link to my `mongo_db` 
+
 ![App 2](Images/app_2.PNG)
+
+I defined my scrape function as below and returned my called on my final mars dictionary I had created in my `mars_scrape.py` 
 
 ![App 3](Images/app_3.PNG)
 
