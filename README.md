@@ -37,7 +37,7 @@ I then connected to my Browser using `executable_path`
 
 For my final code for scraping in `Visual Studio` I used the same dependencies. 
 
-![Dependences VS](depend_vs_code.PNG)
+![Depend VS](Images/depend_vs_code.PNG)
 
 ## Mars News
 
