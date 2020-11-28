@@ -49,7 +49,7 @@ For my final code in `Visual Studio` looked similar:
 
 ![Mars News VS](Images/vs_news_code.PNG)
 
-When viewed on the website, the scrape search displayed below :
+When viewed on the website, the scrape search displays below :
 
 ![Mars News Web](Images/news.PNG)
 
