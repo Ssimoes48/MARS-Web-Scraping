@@ -20,17 +20,36 @@ Ever wonder what the conditions on Mars are right now? Well, look no further! I 
 
 ## Scrape
 
+To develop my scraping code, I used `Jupyter Notebook`. This allowed me to test the code in real time to see if the results were what I was looking for. 
+
+First, I imported my dependencies which included:
+
+*Splinter
+*BeautifulSoup
+*Pandas
+*WebDriver_Manager
+
 ![Dependences](Images/jn_depend.PNG)
 
+I then connected to my Browser using `executable_path` 
+
 ![Browser](Images/browser.PNG)
+
+For my final code for scraping in `Visual Studio` I used the same dependencies. 
 
 ![Dependences VS](depend_vs_code.PNG)
 
 ## Mars News
 
+To find my “Mars News”, I used `Beautiful Soup` function `soup.find` . I viewed the web sites code through the “inspect” tool. With this tool, I was able to see that I need to call the `class_=”list_text” ` . withing that class, I need to add an additional specification and search for the `class_=”content_title” ` . This returned the latest news article headline on the Mars site. I used a similar `soup.find` search to find the correspond text summary of the headline. 
+
 ![Mars News JN](Images/jn_news_code.PNG)
 
-![Mars News VS(Images/vs_news_code.PNG)
+For my final code in `Visual Studio` looked similar:
+
+![Mars News VS](Images/vs_news_code.PNG)
+
+When viewed on the website, the scrape search displayed below :
 
 ![Mars News Web](Images/news.PNG)
 
@@ -38,7 +57,7 @@ Ever wonder what the conditions on Mars are right now? Well, look no further! I 
 
 ![Mars Image JN](Images/jn_image_code.PNG)
 
-![Mars Image VS(Images/vs_image_code.PNG)
+![Mars Image VS](Images/vs_image_code.PNG)
 
 ![Mars Image Web](Images/mars_image.PNG)
 
@@ -46,7 +65,7 @@ Ever wonder what the conditions on Mars are right now? Well, look no further! I 
 
 ![Mars Facts JN](Images/jn_facts_code.PNG)
 
-![Mars Facts VS(Images/vs_facts_code.PNG)
+![Mars Facts VS](Images/vs_facts_code.PNG)
 
 ![Mars Facts Web](Images/mars_facts.PNG)
 
@@ -54,11 +73,11 @@ Ever wonder what the conditions on Mars are right now? Well, look no further! I 
 
 ![Mars Hems JN](Images/jn_hem_code.PNG)
 
-![Mars Hems VS(Images/vs_hem_code.PNG)
+![Mars Hems VS](Images/vs_hem_code.PNG)
 
 ![Mars Hems Web](Images/mars_hem.PNG)
 
-##Scrape Summary
+## Scrape Summary
 
 ![Brower quit JN](Images/jn_quit_code.PNG)
 
