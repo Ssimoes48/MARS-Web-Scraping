@@ -24,10 +24,10 @@ To develop my scraping code, I used `Jupyter Notebook`. This allowed me to test 
 
 First, I imported my dependencies which included:
 
-*Splinter
-*BeautifulSoup
-*Pandas
-*WebDriver_Manager
+* Splinter
+* BeautifulSoup
+* Pandas
+* WebDriver_Manager
 
 ![Dependences](Images/jn_depend.PNG)
 
