@@ -1,4 +1,4 @@
-# Web-Scraping-Challenge: Mission to Mars!
+# Mission to Mars!- Web-Scraping
 
 Ever wonder what the conditions on Mars are right now? Well, look no further! I have created a summary website that shows relevant up to date information about the conditions on mars and other general fun facts. I scraped various NASA websites to offer a curated collection of data of the Planet Mars. 
 
